@@ -1,4 +1,4 @@
-package com.will
+package com.will.array
 
 import scala.collection.mutable.ArrayBuffer
 
