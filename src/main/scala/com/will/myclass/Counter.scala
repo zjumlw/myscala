@@ -8,5 +8,4 @@ class Counter {
   }
 
   def current: Int = value
-
 }
