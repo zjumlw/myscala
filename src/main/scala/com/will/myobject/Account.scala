@@ -1,6 +1,6 @@
 package com.will.myobject
 
-class Account private (val id: Int, initialBalance : Double) {
+class Account (val id: Int, initialBalance : Double) {
   private var balance = initialBalance
 }
 

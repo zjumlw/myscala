@@ -9,6 +9,8 @@ object ObjectMain {
 
     val  array1 = Array(100)
     println(array1(0))
+
+    val account = Account(40.0)
   }
 
 }

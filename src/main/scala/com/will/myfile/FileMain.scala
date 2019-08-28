@@ -1,5 +1,6 @@
 package com.will.myfile
 
+import java.io.PrintWriter
 import java.net.URL
 
 import scala.io.{BufferedSource, Source}
@@ -37,6 +38,13 @@ object FileMain {
     for (elem <- numbers) {
       println(elem)
     }
+
+    val resourcesPath = "/Users/work/workspace/scala/src/main/resources"
+    println(s"resourcePath: $resourcesPath")
+
+    val out = new PrintWriter(resourcesPath + "/numbers.txt")
+    for (i <- 1 to 100) out.println(i)
+    out.close()
   }
 
 }
