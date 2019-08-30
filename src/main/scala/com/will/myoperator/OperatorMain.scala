@@ -6,6 +6,14 @@ object OperatorMain {
     val value = fraction.value
 
     println("value: " + value)
+
+    val option: Option[(Int, Int)] = Fraction.unapply(fraction)
+    val res: (Int, Int) = option.get
+    println(res)
+
+    val Fraction(a, b) = fraction
+    println(a + ", " + b)
+
   }
 
 }
