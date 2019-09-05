@@ -19,6 +19,16 @@ object FuncMain {
     val f = (_: String).charAt(_: Int)
     val f1: (String, Int) => Char = _.charAt(_)
 
+    def valueAtOneQuarter(f: Double => Double) = f(0.25)
+
+    val res1: Double = valueAtOneQuarter(ceil)
+    println(s"res1: $res1")
+
+    val res2: Double = valueAtOneQuarter(sqrt)
+    println(s"res2: $res2")
   }
+
+  def mulBy(factor: Double) = (x: Double) => factor * x
+
 
 }
