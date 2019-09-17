@@ -1,5 +1,9 @@
 package com.will.myfunc
 
+import java.awt.event.ActionListener
+
+import javax.swing.JButton
+
 import scala.math._
 
 object FuncMain {
@@ -26,6 +30,16 @@ object FuncMain {
 
     val res2: Double = valueAtOneQuarter(sqrt)
     println(s"res2: $res2")
+
+    val quintuple = mulBy(5)
+    println("quintuple result: " + quintuple(20))
+
+    var count = 0
+    val button = new JButton("increment")
+    button.addActionListener(event => count += 1)
+
+    val listener: ActionListener = event => println(count)
+    button.addActionListener(listener)
   }
 
   def mulBy(factor: Double) = (x: Double) => factor * x
