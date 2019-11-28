@@ -40,4 +40,6 @@ object CollectionMain {
 
   }
 
+  def ulcase(s: String) = Vector(s.toUpperCase(), s.toLowerCase())
+
 }

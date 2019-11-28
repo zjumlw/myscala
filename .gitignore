@@ -5,6 +5,7 @@ logs
 *.iml
 *.class
 *.log
+*.attach_*
 bin/
 gen/
 out/
