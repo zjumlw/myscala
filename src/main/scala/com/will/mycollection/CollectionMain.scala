@@ -27,6 +27,17 @@ object CollectionMain {
     numbers ++= Array(10, 11)
     println(s"numbers: $numbers")
 
+    val names = List("Peter", "Paul", "Array")
+    val namesUpperCase = names.map(_.toUpperCase())
+    println(s"names: $names")
+    println(s"namesUpperCase: $namesUpperCase")
+
+    println("reduceLeft: " + digits.reduceLeft(_ - _))
+    println("reduceRight: " + digits.reduceRight(_ - _))
+
+    println(Vector(1, 2, 3) :+ 5)
+    println(1 +: Vector(1, 2, 3) :+ 5)
+
   }
 
 }
