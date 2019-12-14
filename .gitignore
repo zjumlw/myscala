@@ -2,10 +2,9 @@
 logs
 *.iml
 .idea
-*.iml
 *.class
 *.log
-*.attach_*
+.attach_*
 bin/
 gen/
 out/
